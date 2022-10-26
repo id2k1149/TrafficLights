@@ -27,7 +27,10 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        blackView.layer.borderWidth = 10
+        blackView.layer.borderColor = UIColor.gray.cgColor
         blackView.layer.cornerRadius = blackView.frame.width / 4
+        
         redView.layer.cornerRadius = redView.frame.width / 2
         yellowView.layer.cornerRadius = yellowView.frame.width / 2
         greenView.layer.cornerRadius = greenView.frame.width / 2
